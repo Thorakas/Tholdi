@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B45185E0-3394-49E3-9177-12209AFEE47C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>TholdiApplication</RootNamespace>
+    <AssemblyName>TholdiApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>TholdiApplication.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Modeles\Formulaire.cs" />
+    <Compile Include="Modeles\Container.cs" />
+    <Compile Include="Modeles\DataBaseAccess.cs" />
+    <Compile Include="Modeles\Declaration.cs" />
+    <Compile Include="Modeles\Etat.cs" />
+    <Compile Include="Vues\FormConsulterInspectionDocker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vues\FormConsulterInspectionDocker.Designer.cs">
+      <DependentUpon>FormConsulterInspectionDocker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vues\FormConsulterDeclarationDocker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vues\FormConsulterDeclarationDocker.Designer.cs">
+      <DependentUpon>FormConsulterDeclarationDocker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vues\FormConsulterProbleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vues\FormConsulterProbleme.Designer.cs">
+      <DependentUpon>FormConsulterProbleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vues\FormPageConnexion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vues\FormPageConnexion.Designer.cs">
+      <DependentUpon>FormPageConnexion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vues\FormPagePrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vues\FormPagePrincipal.Designer.cs">
+      <DependentUpon>FormPagePrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vues\FormPagePrincipalChefEquipe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vues\FormPagePrincipalChefEquipe.Designer.cs">
+      <DependentUpon>FormPagePrincipalChefEquipe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vues\FormPagePrincipalDocker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vues\FormPagePrincipalDocker.Designer.cs">
+      <DependentUpon>FormPagePrincipalDocker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vues\FormConsulterInspection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vues\FormConsulterInspection.Designer.cs">
+      <DependentUpon>FormConsulterInspection.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vues\FormSaisirInspectionChef.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vues\FormSaisirInspectionChef.Designer.cs">
+      <DependentUpon>FormSaisirInspectionChef.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vues\FormSaisirProbleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vues\FormSaisirProbleme.Designer.cs">
+      <DependentUpon>FormSaisirProbleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Vues\FormSaisirDeclarationDocker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Vues\FormSaisirDeclarationDocker.Designer.cs">
+      <DependentUpon>FormSaisirDeclarationDocker.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modeles\Inspection.cs" />
+    <Compile Include="Modeles\Motif.cs" />
+    <Compile Include="Modeles\Probleme.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Modeles\Travaux.cs" />
+    <EmbeddedResource Include="Vues\FormConsulterDeclarationDocker.resx">
+      <DependentUpon>FormConsulterDeclarationDocker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vues\FormConsulterInspectionDocker.resx">
+      <DependentUpon>FormConsulterInspectionDocker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vues\FormConsulterProbleme.resx">
+      <DependentUpon>FormConsulterProbleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vues\FormPageConnexion.resx">
+      <DependentUpon>FormPageConnexion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vues\FormPagePrincipal.resx">
+      <DependentUpon>FormPagePrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vues\FormPagePrincipalChefEquipe.resx">
+      <DependentUpon>FormPagePrincipalChefEquipe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vues\FormPagePrincipalDocker.resx">
+      <DependentUpon>FormPagePrincipalDocker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vues\FormConsulterInspection.resx">
+      <DependentUpon>FormConsulterInspection.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vues\FormSaisirInspectionChef.resx">
+      <DependentUpon>FormSaisirInspectionChef.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vues\FormSaisirDeclarationDocker.resx">
+      <DependentUpon>FormSaisirDeclarationDocker.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Vues\FormSaisirProbleme.resx">
+      <DependentUpon>FormSaisirProbleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IHM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IHM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IHMBGRD.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IHMBGRD1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IHM1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo_blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\IHM2.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
