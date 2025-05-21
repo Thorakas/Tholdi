@@ -19,7 +19,8 @@ namespace TholdiApplication.Vues
         {
             InitializeComponent();
         }
-        
+
+        //A l'ouverture du formulaire, affiche une liste d'inspection prévue, en cours et terminé
         private void FormConsulterInspection_Load(object sender, EventArgs e)
         {
             List<Inspection> collectionInspectionPrevue = Inspection.FetchAllPrevue();
@@ -30,14 +31,8 @@ namespace TholdiApplication.Vues
             dataGridView3.DataSource = collectionInspectionFinie;
 
         }
-
-        
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
+               
+        //Selection d'une ligne de la liste
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             int IdxLigneActuelle = e.RowIndex;
@@ -46,7 +41,7 @@ namespace TholdiApplication.Vues
         }
 
 
-        //bouton affecter aux inspections
+        //Bouton qui transfert la ligne selectionné de la liste des inspections prévue à inspection en cours
         private void button1_Click(object sender, EventArgs e)
         {
             if (dataGridView1.SelectedRows.Count > 0)
@@ -77,12 +72,9 @@ namespace TholdiApplication.Vues
                 {
                     MessageBox.Show("Veuillez sélectionner une inspection à modifier.", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
-
-
-            
-
         }
 
+        //Retourne à la page d'accueil du logiciel
         private void rETOURVERSLEMENUPRINCIPALToolStripMenuItem_Click(object sender, EventArgs e)
         {
 
@@ -98,6 +90,7 @@ namespace TholdiApplication.Vues
             }
         }
 
+        //Retourne vers la page principal des chefs d'équipe
         private void rETOURNERVERSLINTERFACEDESCHEFSToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Thread t = new Thread(() => Application.Run(new FormPagePrincipalChefEquipe()));
@@ -105,7 +98,7 @@ namespace TholdiApplication.Vues
             this.Close();
         }
 
-        //bouton Affecter aux inspections achevées
+        //Bouton qui transfert la ligne selectionné de la liste des inspections en cours à inspection terminé
         private void button2_Click(object sender, EventArgs e)
         {
 

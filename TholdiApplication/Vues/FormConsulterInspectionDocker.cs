@@ -20,12 +20,14 @@ namespace TholdiApplication.Vues
             InitializeComponent();
         }
 
+        // A l'ouverture du formulaire, affiche toutes les inspections prévues
         private void FormConsulterInspectionDocker_Load(object sender, EventArgs e)
         {
             List<Inspection> collectionInspectionPrevue = Inspection.FetchAllPrevue();
             dataGridView1.DataSource = collectionInspectionPrevue;
         }
 
+        //Retourne vers la page principal des dockers
         private void rETOURNERVERSLINTERFACEDESDOCKERSToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Thread t = new Thread(() => Application.Run(new FormPagePrincipalDocker()));
@@ -33,6 +35,7 @@ namespace TholdiApplication.Vues
             this.Close();
         }
 
+        //Retourne à la page d'accueil du logiciel
         private void RetournerVersLeMenuPrincipalToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Voulez-vous retourner au menu principal THOLDI ? Vous serez déconnecté", "Avertissement", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)

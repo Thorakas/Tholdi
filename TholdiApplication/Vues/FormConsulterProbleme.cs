@@ -20,6 +20,7 @@ namespace TholdiApplication.Vues
             InitializeComponent();
         }
 
+        // A l'ouverture du formulaire, affiche toutes la liste des problèmes existants
         private void FormConsulterProbleme_Load(object sender, EventArgs e)
         {
             List<Probleme> collectionProblemee = Probleme.FetchAll();
@@ -27,6 +28,7 @@ namespace TholdiApplication.Vues
             listBox1.ValueMember = "LIBELLEPROBLEME";
         }
 
+        //Retourne à la page d'accueil du logiciel
         private void rETOURNERPAGEPRINCIPALEToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Voulez-vous retourner au menu principal THOLDI ?", "Avertissement", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
@@ -41,6 +43,7 @@ namespace TholdiApplication.Vues
             }
         }
 
+        //Retourne vers la page principal des chefs d'équipe
         private void rETOURVERSLINTERFACEDESCHEFSToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Thread t = new Thread(() => Application.Run(new FormPagePrincipalChefEquipe()));

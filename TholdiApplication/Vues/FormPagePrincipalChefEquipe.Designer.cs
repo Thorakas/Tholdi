@@ -106,7 +106,6 @@
             this.problèmeToolStripMenuItem.Name = "problèmeToolStripMenuItem";
             this.problèmeToolStripMenuItem.Size = new System.Drawing.Size(78, 20);
             this.problèmeToolStripMenuItem.Text = "PROBLEME";
-            this.problèmeToolStripMenuItem.Click += new System.EventHandler(this.problèmeToolStripMenuItem_Click);
             // 
             // prévoirUneInspectionToolStripMenuItem
             // 
@@ -152,7 +151,6 @@
             this.MaximizeBox = false;
             this.Name = "FormPagePrincipalChefEquipe";
             this.Text = "Tholdi - Interface (Chef d\'Equipe)";
-            this.Load += new System.EventHandler(this.FormPagePrincipalChefEquipe_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

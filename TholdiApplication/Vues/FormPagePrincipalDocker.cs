@@ -21,6 +21,7 @@ namespace TholdiApplication.Vues
             InitializeComponent();
         }
 
+        // Envoie au formulaire qui permet de faire remonter un problème de container
         private void saisirUnProblèmeToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Thread t = new Thread(() => Application.Run(new FormSaisirDeclarationDocker()));
@@ -28,6 +29,7 @@ namespace TholdiApplication.Vues
             this.Close();
         }
 
+        //Retourne à la page d'accueil du logiciel
         private void rETOURNERVERSLEMENUPRINCIPALToolStripMenuItem_Click(object sender, EventArgs e)
         {
             if (MessageBox.Show("Voulez-vous retourner au menu principal THOLDI ?", "Avertissement", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
@@ -42,15 +44,7 @@ namespace TholdiApplication.Vues
             }
         }
 
-        
-
-        private void toolStripMenuItem2_Click(object sender, EventArgs e)
-        {
-            Thread t = new Thread(() => Application.Run(new FormSaisirDeclarationDocker()));
-            t.Start();
-            this.Close();
-        }
-
+        // Envoie au formulaire qui permet d'afficher toutes les inspections prévues
         private void consulterUneInspectionToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Thread t = new Thread(() => Application.Run(new FormConsulterInspectionDocker()));

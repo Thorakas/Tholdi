@@ -189,3 +189,5 @@ C:\Users\Utilisateur\source\repos\TholdiApplication\TholdiApplication\obj\Debug\
 C:\Users\Utilisateur\source\repos\TholdiApplication\TholdiApplication\obj\Debug\TholdiApplication.exe
 C:\Users\Utilisateur\source\repos\TholdiApplication\TholdiApplication\obj\Debug\TholdiApplication.pdb
 C:\Users\Utilisateur\source\repos\TholdiApplication\TholdiApplication\obj\Debug\TholdiApplication.Vues.FormConsulterInspectionDocker.resources
+C:\Users\Utilisateur\source\repos\TholdiApplication\TholdiApplication\bin\Debug\BCrypt.Net-Next.dll
+C:\Users\Utilisateur\source\repos\TholdiApplication\TholdiApplication\bin\Debug\BCrypt.Net-Next.xml

@@ -99,7 +99,7 @@
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Effectuer la saisie d\'une inscription";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
+           
             // 
             // comboBox1
             // 
@@ -268,7 +268,6 @@
             this.MaximizeBox = false;
             this.Name = "FormSaisirInspectionChef";
             this.Text = "Tholdi - Saisir une inspection (Chef)";
-            this.Load += new System.EventHandler(this.FormSaisirInspectionChef_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

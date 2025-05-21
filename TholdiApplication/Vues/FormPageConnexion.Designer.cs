@@ -127,9 +127,8 @@
             // manuelUtilisateurToolStripMenuItem
             // 
             this.manuelUtilisateurToolStripMenuItem.Name = "manuelUtilisateurToolStripMenuItem";
-            this.manuelUtilisateurToolStripMenuItem.Size = new System.Drawing.Size(169, 22);
-            this.manuelUtilisateurToolStripMenuItem.Text = "Manuel utilisateur";
-            this.manuelUtilisateurToolStripMenuItem.Click += new System.EventHandler(this.manuelUtilisateurToolStripMenuItem_Click);
+            this.manuelUtilisateurToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.manuelUtilisateurToolStripMenuItem.Text = "Manuel utilisateur";            
             // 
             // mENUPRINCIPALToolStripMenuItem
             // 

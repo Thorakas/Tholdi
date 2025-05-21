@@ -140,7 +140,6 @@
             this.sITEWEBToolStripMenuItem.Name = "sITEWEBToolStripMenuItem";
             this.sITEWEBToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
             this.sITEWEBToolStripMenuItem.Text = "Site web";
-            this.sITEWEBToolStripMenuItem.Click += new System.EventHandler(this.sITEWEBToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
