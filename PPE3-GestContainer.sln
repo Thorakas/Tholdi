@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31729.503
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PPE3-GestContainer", "TholdiApplication\PPE3-GestContainer.csproj", "{B45185E0-3394-49E3-9177-12209AFEE47C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TholdiTest", "TholdiTest\TholdiTest.csproj", "{51DB6D72-03C1-427B-B692-B67889B4ED3F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,8 +17,15 @@ Global
 		{B45185E0-3394-49E3-9177-12209AFEE47C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B45185E0-3394-49E3-9177-12209AFEE47C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B45185E0-3394-49E3-9177-12209AFEE47C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51DB6D72-03C1-427B-B692-B67889B4ED3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51DB6D72-03C1-427B-B692-B67889B4ED3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51DB6D72-03C1-427B-B692-B67889B4ED3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51DB6D72-03C1-427B-B692-B67889B4ED3F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {54E6D7CE-900A-448C-BE30-9071FFA92BB9}
 	EndGlobalSection
 EndGlobal
